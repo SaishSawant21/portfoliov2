@@ -8,7 +8,7 @@
         <script src="https://cdn.tailwindcss.com"></script>
         <script src="https://kit.fontawesome.com/58c427b884.js" crossorigin="anonymous"></script>
     </head>
-    <body>
+    <body id="home">
         <header>
             <!-- Navigation bar -->
             <b>
@@ -59,10 +59,10 @@
                     data-te-navbar-nav-ref>
                     <li class="mb-4 lg:mb-0 lg:pr-2 hover:bg-gray-100 " data-te-nav-item-ref>
                       <a
-                        class="block transition duration-150 ease-in-out hover:text-neutral-700 focus:text-neutral-700
+                        class="block transition delay duration-300 ease-in-out hover:text-neutral-700 focus:text-neutral-700
                          disabled:text-black/30 dark:hover:text-white dark:focus:text-white lg:p-2 
-                          [&.active]:text-blue/90 text"
-                        href="#!"
+                          [&.active]:text-blue/90 text ease-in-out"
+                        href="#Home"
                         data-te-nav-link-ref
                         data-te-ripple-init
                         data-te-ripple-color="light"
@@ -74,10 +74,10 @@
                         class="block transition duration-150 ease-in-out hover:text-neutral-700 focus:text-neutral-700
                          disabled:text-black/30 dark:hover:text-white dark:focus:text-white lg:p-2 [&.active]:text-black/90
                          hover:bg-gray-100"
-                        href="#!"
+                        href="#About"
                         data-te-nav-link-ref
                         data-te-ripple-init
-                        >Features</a
+                        >About</a
                       >
                     </li>
                     <li class="mb-4 lg:mb-0 lg:pr-2" data-te-nav-item-ref>
@@ -85,11 +85,11 @@
                         class="block transition duration-150 ease-in-out hover:text-neutral-700 focus:text-neutral-700 
                         disabled:text-black/30 dark:hover:text-white dark:focus:text-white lg:p-2 [&.active]:text-black/90
                         hover:bg-gray-100"
-                        href="#!"
+                        href="#Skills"
                         data-te-nav-link-ref
                         data-te-ripple-init
                         data-te-ripple-color="light"
-                        >Pricing</a
+                        >Skills</a
                       >
                     </li>
                     <li class="mb-2 lg:mb-0 lg:pr-2" data-te-nav-item-ref>
@@ -97,11 +97,23 @@
                         class="block transition duration-150 ease-in-out hover:text-neutral-700 focus:text-neutral-700 
                         disabled:text-black/30 dark:hover:text-white dark:focus:text-white lg:p-2 [&.active]:text-black/90 
                         hover:bg-gray-100"
-                        href="#!"
+                        href="#Education"
                         data-te-nav-link-ref
                         data-te-ripple-init
                         data-te-ripple-color="light"
-                        >About</a
+                        >Education</a
+                      >
+                    </li>
+                    <li class="mb-2 lg:mb-0 lg:pr-2" data-te-nav-item-ref>
+                      <a
+                        class="block transition duration-150 ease-in-out hover:text-neutral-700 focus:text-neutral-700 
+                        disabled:text-black/30 dark:hover:text-white dark:focus:text-white lg:p-2 [&.active]:text-black/90 
+                        hover:bg-gray-100"
+                        href="#Projects"
+                        data-te-nav-link-ref
+                        data-te-ripple-init
+                        data-te-ripple-color="light"
+                        >Projects</a
                       >
                     </li>
                   </ul>
@@ -113,17 +125,29 @@
          
           </header>
           <span class="bg-gray-200">
-          <section class="bg-cover bg-center h-96 " style="background-image: url('bacgrd.jpg')">
-            <h1 class="text-white text-center text-4xl font-bold pt-40 ">Hi, I'm Saish Sawant</h1>
-            <h3 class="text-white text-center text-3xl font-bold">Thriving to become a software developer</h3>
+          <section class="bg-cover bg-center h-96 brightness-75 contrast-125" style="background-image: url('bacgrd.jpg')">
+            <h1 class="text-white text-center text-4xl font-bold pt-40 drop-shadow-lg brightness-100 ">Hi, I'm Saish Sawant</h1>
+            <h3 id="flip" class="text-white text-center text-3xl font-bold drop-shadow-lg brightness-100 overflow-x-hidden whitespace-nowrap">Thriving to become a software developer</h3>
           </section>
         </span>
 
-        <div id="About Me" class="h-120 sm:text-center">
-              <h2 class="font-bold mt-4 lg:text-right lg:mr-[20rem] sm:ml-[5rem] text-3xl sm:text-center">About Me</h2>
-              <div class="lg:text-left lg:ml-[45rem] lg:mr-[5rem] mt-4 md:m-5 pt-3 md:text-center">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur dolores neque voluptatum quae sit doloremque dolorum possimus, quam dolorem tempore omnis quos, nobis qui quisquam corporis facilis nesciunt eveniet recusandae!
-              
+        
+        <div id="About" class="h-100 sm:text-center lg:text-center">
+              <h2 class="font-bold mt-4 lg:text-center lg:mr-[20rem] sm:ml-[5rem] text-3xl sm:text-center my-5">About Me</h2>
+              <div class="lg:flex sm:content">
+                <div class="h-[16em] w-[14em] bg-no-repeat bg-contain rounded-lg bg-left ml-[8rem]" style="background-image: url('./Photo.jpg');">
+                
+                </div>
+                <div class="flex-1 sm:mx-2 lg:text-left lg:ml-[8rem] lg:mr-[5rem] mt-4 md:m-5 lg:pt-3 md:text-center flex font-medium">
+                  I'm a Student at Goa University pursuing MCA. I am aiming to become software developer. 
+                  I want to learn more about tech world and gain knowledge from my colleagues.
+                  I would try to work hard to the organisation I will be working for.
+                </div>
+              </div>
+              <button class="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 bg-black hover:bg-indigo-500 text-white font-bold py-2 px-4 rounded inline-flex  my-2 mr-[16rem]">
+                <svg class="fill-current w-4 h-4 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"> <path d="M13 8V2H7v6H2l8 8 8-8h-5zM0 18h20v2H0v-2z"/> </svg>
+                <a href="./Resume.pdf" target="_blank">Download Resume</a>
+              </button>
         </div>
       <!--  <div>
           <div
@@ -154,32 +178,34 @@
 </div>
 
         </div>-->
-  <div>
-        <div class="bg-sky-800">
-          <h1 class="text-white text-2xl font-bold my-5">Skills</h1>
-          <div class="grid grid-cols-6 gap-4 ">
-          <div class="bg-gray-200 justify-center items-center flex border-neutral-100 rounded-xl mb-2" >
-              <p>html5</p>
-          </div>
+  <div id="Skills">
+    <div class="bg-gradient-to-r from-sky-500 to-indigo-500">
+          <h1 class="text-white text-2xl font-bold my-5 text-center">Skills</h1>
+          
+      <div class="grid grid-cols-3 gap-2">
+
+          <button class="transition duration-150 ease-in-out bg-gray-200 justify-center items-center flex border-neutral-100 rounded-xl mb-2 hover:bg-black hover:text-white " >
+              html5
+          </button>
           <!-- ... -->
-          <div class="bg-gray-200 justify-center items-center flex border-neutral-100 rounded-xl mb-2" >
+          <button class="bg-gray-200 justify-center items-center flex border-neutral-100 rounded-xl mb-2 hover:bg-black hover:text-white" >
            <p>CSS3</p>
-          </div>
-          <div class="bg-gray-200 justify-center items-center flex border-neutral-100 rounded-xl mb-2" >
+          </button>
+          <button class="bg-gray-200 justify-center items-center flex border-neutral-100 rounded-xl mb-2 hover:bg-black hover:text-white">
            <p>PHP</p>
-           </div>
+           </button>
 
-           <div class="bg-gray-200 justify-center items-center flex border-neutral-100 rounded-xl mb-2" >
+           <button class="bg-gray-200 justify-center items-center flex border-neutral-100 rounded-xl mb-2 hover:bg-black hover:text-white" >
            <p> React</p>
-           </div>
+           </button>
 
-           <div class="bg-gray-200 justify-center items-center flex border-neutral-100 rounded-xl mb-2" >
+           <button class="bg-gray-200 justify-center items-center flex border-neutral-100 rounded-xl mb-2  hover:bg-black hover:text-white" >
             <p>Bootstrap</p>
-           </div>
+           </button>
 
-           <div class="bg-gray-200 justify-center items-center flex border-neutral-100 rounded-xl mb-2" >
+           <button class="bg-gray-200 justify-center items-center flex border-neutral-100 rounded-xl mb-2 hover:bg-black hover:text-white" >
             <p>C</p>
-           </div>
+           </button>
 
            <!--<div class="bg-gray-200 justify-center items-center flex border-neutral-100 rounded-xl mb-2" >
             <p></p>
@@ -188,7 +214,7 @@
         </div>
      </div>
 
-  </div>
+  
   
   <div id="Education" class=" m-5">
     <h2 class="font-bold mt-4   text-3xl text-center">Education</h2>
@@ -256,40 +282,47 @@
     
 </div>
 
-<div id="Projects" class="bg-sky-800 h-120">
+<div id="Projects" class="bg-gradient-to-r from-sky-500 to-indigo-500 h-140">
   <h1 class="text-white text-2xl font-bold text-center" >Projects</h1>
-  <div class="container flex grid-cols-2 gap-4  my-3">
-  <div class="bg-white h-30 rounded-lg mx-4 my-2">
-      <h2 class="text-xl font-bold text-center">Portfolio</h2>
-      <p class="text-center">View this wonderful website </p>
-    <div class="grid grid-cols-3 gap-4  my-3 mx-2 rounded-full">
-      <span class="bg-black text-white text-center">html</span>
-      <span class="bg-black text-white text-center">tailwindcss</span>
-  </div>
-  <div class="container items-center flex ">
-  <button class=" bg-black text-blue-100 w-[4em] mx-2 rounded my-2"><a href="https://github.com/SaishSawant21/portfoliov2">Code</a></button>
-  
-  <button class="bg-black text-blue-100 w-[4em] mx-2 rounded ml-[30em]"><a href="#">Demo</a></button> 
-  </div>
+  <div class="container lg:flex lg:grid-cols-2 lg:gap-4 my-3 sm:grid-cols-1 sm:mx-2 sm:my-2">
+    
+            <div class="bg-white h-30 rounded-lg mx-4 my-2">
+                  <h2 class="text-xl font-bold text-center">Portfolio</h2>
+                  <p class="text-center">View this wonderful website </p>
+
+                  <div class="grid grid-cols-3 gap-4  my-3 mx-2 rounded-full ml-[8rem]">
+                    <span class="bg-black text-white text-center hover:bg-blue-500 hover:text-white">Html</span>
+                    <span class="bg-black text-white text-center  hover:bg-blue-500 hover:text-white">TailwindCSS</span>
+                  </div>
+
+                <div class="container items-center flex ">
+                  <button class="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 hover:bg-indigo-500 bg-black text-blue-100 w-[4em] mx-2 rounded my-2 cursor-pointer"><a href="https://github.com/SaishSawant21/portfoliov2">Code</a></button>
+                  <button class="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 hover:bg-indigo-500 bg-black text-blue-100 w-[4em] mx-2 rounded lg:ml-[30em] sm:ml-[100em] cursor-pointer"><a href="#">Demo</a></button> 
+                </div>
+
+          </div>
+
+        <div class="bg-white h-30 rounded-lg mx-4 my-2 ">
+              <h2 class="text-xl font-bold text-center">Hulu Clone</h2>
+              <p class="text-center">View this wonderful website </p>
+              
+              <div class="grid grid-cols-3 gap-4  my-3 mx-2 rounded-full items-center">
+                <span class="bg-black text-white text-center  hover:bg-blue-500 hover:text-white">Typescript</span>
+                <span class="bg-black text-white text-center  hover:bg-blue-500 hover:text-white">Vite</span>
+                <span class="bg-black text-white text-center  hover:bg-blue-500 hover:text-white">Tailwind CSS</span>
+              </div>
+
+            <div class="container items-center flex grid-rows-2 ">
+            <button class="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 hover:bg-indigo-500 bg-black text-blue-100 w-[4em] lg:mx-2 rounded my-2 cursor-pointer "><a href="https://github.com/SaishSawant21/hulu">Code</a></button>
+            <button class="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 hover:bg-indigo-500 bg-black text-blue-100 w-[4em] lg:mx-2 rounded lg:ml-[30em] cursor-pointer sm:ml-[20em] "><a href="https://hulu-rho-gold.vercel.app/">Demo</a></button> 
+            </div>
+
+          </div>
+
+
+    </div>
 </div>
 
-<div class="bg-white h-30 rounded-lg mx-4 my-2">
-      <h2 class="text-xl font-bold text-center">Project 2</h2>
-      <p class="text-center">View this wonderful website </p>
-    <div class="grid grid-cols-3 gap-4  my-3 mx-2 rounded-full">
-      <span class="bg-black text-white text-center">Typescript</span>
-      <span class="bg-black text-white text-center">Vite</span>
-  </div>
-  <div class="container items-center flex grid-rows-2 ">
-  <button class=" bg-black text-blue-100 w-[4em] mx-2 rounded my-2"><a href="https://github.com/SaishSawant21/portfoliov2">Code</a></button>
-  
-  <button class="bg-black text-blue-100 w-[4em] mx-2 rounded ml-[30em]"><a href="#">Demo</a></button> 
-  </div>
-</div>
-
-
-</div>
-</div>
 <footer
   class="flex flex-col items-center bg-neutral-200 text-center text-white dark:bg-neutral-600">
   <div class="container pt-9">
